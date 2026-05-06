@@ -117,6 +117,8 @@ export default function App() {
           .filter((d: any) => d.id)
           .map((d: any) => ({
             ...d,
+            month: String(d.month),
+            year: String(d.year),
             targetHours: Number(d.targetHours) || 0,
             leaveDays: Number(d.leaveDays) || 0,
             leaveType: d.leaveType || ''
@@ -126,6 +128,8 @@ export default function App() {
           .filter((d: any) => d.id)
           .map((d: any) => ({
             ...d,
+            month: String(d.month),
+            year: String(d.year),
             days: Number(d.days) || 0
           }));
 
