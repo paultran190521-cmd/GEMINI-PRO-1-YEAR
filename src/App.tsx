@@ -8,7 +8,7 @@ import LeaveManager from './components/LeaveManager';
 import { LayoutDashboard, Users, BookOpen, Loader2, Target, CalendarOff } from 'lucide-react';
 import { CounselingSession, TeachingSession, KpiRecord, LeaveRecord } from './types';
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzR5e4WNa4LtK3RVZv_5gFRh_bWvp-O_3ghiBMqUm-sX4u8Wi-mODP1Rt2irULJOSpTaw/exec";
+const SCRIPT_URL = import.meta.env.VITE_GAS_URL || "https://script.google.com/macros/s/AKfycbzR5e4WNa4LtK3RVZv_5gFRh_bWvp-O_3ghiBMqUm-sX4u8Wi-mODP1Rt2irULJOSpTaw/exec";
 
 // Helper to normalize various date formats (e.g., DD/MM/YYYY, MM/DD/YYYY, ISO) to YYYY-MM-DD
 const normalizeDate = (rawDate: any): string => {
